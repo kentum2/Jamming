@@ -62,6 +62,7 @@ const Spotify = {
 
   savePlaylist(playlistName, trackUris) {
     if (!playlistName || !trackUris.length) {
+      console.log('return from the beginning');
       return;
     }
   
