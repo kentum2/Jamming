@@ -17,22 +17,35 @@ class App extends React.Component {
 
     this.state = {
       searchResults: [
-        //{name},
-        //{artist},
-        //{album},
-        //{id}
+        {
+        name: 'I Would Die 4 U',
+        artist: 'Prince',
+        album: 'Purple Rain',
+        id: 'song1'
+        },
+        {
+        name: 'Seven',
+        artist: 'Artist Formerly Known As Prince',
+        album: 'Diamonds and Pearls',
+        id: 'song2'
+        },
+        {
+        name: 'Jhonny Jhonny',
+        artist: 'unknown',
+        album: 'Not on an album',
+        id: 'song3'
+        }
       ],
-
-      playListName: 'New Playlist',
-      playlistTracks:[
-        //{name},
-        //{artist},
-        //{album},
-        //{id}
+    playlistName: 'Rebecca Playlist',
+    playlistTracks: [
+      {
+      name: 'Jungle Love',
+      artist: 'Morris Day',
+      album: 'The Time',
+      id: 'songA'}
       ]
     }
-
-  }
+  };
 
   addTrack(track) {
     if(this.state.playListTracks.find(playlistTrack =>playlistTrack.id===track.id)) {
