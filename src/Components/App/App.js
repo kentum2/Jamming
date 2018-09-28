@@ -48,10 +48,10 @@ class App extends React.Component {
   };
 
   addTrack(track) {
-    if(this.state.playListTracks.find(playlistTrack =>playlistTrack.id===track.id)) {
+    if(this.state.playlistTracks.find(playlistTrack =>playlistTrack.id===track.id)) {
       return;
     } else {
-      this.state.playListTracks.push(track);
+      this.state.playlistTracks.push(track);
     }
     this.setState ({
       playlistTracks: this.state.playlistTracks
