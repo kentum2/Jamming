@@ -1,6 +1,6 @@
 const clientID = "85d12631bce744e685100b5584d27167";
-const redirectURI = 'https://jammingexperiment.surge.sh/'; 
-//const redirectURI = 'http://localhost:3000/';
+//const redirectURI = 'https://jammingexperiment.surge.sh/'; 
+const redirectURI = 'http://localhost:3000/';
 
 let accessToken;
 
@@ -80,16 +80,16 @@ const Spotify = {
         body: JSON.stringify({playlistName: playlistName})
       }).then(response => response.json()
       ).then(jsonResponse => {
-        const playlistId = jsonResponse.id;
-        console.log(jsonResponse.id);
+        console.log(jsonResponse)
+        /*const playlistId = jsonResponse.id;
         let testFetch =  fetch(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`, {
           headers: headers,
           method: 'POST',
-          body: JSON.stringify({uris: trackUris})
+          body: JSON.stringify({uris: trackUris}) 
           
-        })
-        console.log(testFetch);
-        return testFetch;
+        }) */
+        /*console.log(testFetch);
+        return testFetch;*/
         
         })
       })
