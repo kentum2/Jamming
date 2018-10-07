@@ -28,7 +28,7 @@ h2 {
 
 .App {
   height: 100%;
-  padding: 0 17% 10% 17%;
+  padding: 0 7% 10% 7%;
   background-image: url('./background_photo_desktop.jpg');
   background-size: cover;
   background-position: center;
@@ -49,4 +49,35 @@ h2 {
     align-items: center;
     flex-direction: column;
   }
+}
+
+table {
+  width: 100%;
+  background-color: #010c3f;
+}
+
+.copy {
+  visibility: hidden;
+}
+
+.d1 {
+  padding: 12px;
+  float: left;
+  font-family: 'Work Sans', sans-serif
+}
+
+.d3 {
+  float: right;
+  color: #fff;
+}
+
+.d3 a{
+  padding: 12px;
+  color:  #fff;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+}
+
+.d3 a:hover{
+  background-color: #4000ff;
 }

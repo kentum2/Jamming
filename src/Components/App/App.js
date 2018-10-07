@@ -64,20 +64,30 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Ja<span className="highlight">mmm</span>ing</h1>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <small className="d1 copy">Spotify Library</small>
+              </td>
+              <td>
+                <h1>J<span className="highlight">ammin</span>g</h1>
+              </td>
+              <td className="d3">
+                <small><a href="https://open.spotify.com/collection/playlists" target="_blank" rel="noopener noreferrer" >Spotify Library</a></small>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <div className="App">
-          <SearchBar onSearch={this.search} />
+          <SearchBar onSearch={this.search} /> 
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
-            <Playlist 
-              playlistName={this.state.playlistName} 
-              playlistTracks={this.state.playlistTracks} 
-              onRemove={this.removeTrack} 
-              onNameChange={this.updatePlaylistName}
-              onSave={this.savePlaylist} />
+            <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} 
+                      onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onClick={this.savePlaylist} /> 
           </div>
         </div>
-      </div>
+      </div>      
     );
   }
 }
