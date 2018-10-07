@@ -1,5 +1,5 @@
 const clientId = "85d12631bce744e685100b5584d27167";
-//const redirectURI = 'https://jammingexperiment.surge.sh/'; 
+//const redirectUri = 'https://jammingexperiment.surge.sh/'; 
 const redirectUri = 'http://localhost:3000/';
 
 let accessToken;
@@ -41,7 +41,8 @@ const Spotify = {
         name: track.name,
         artist: track.artists[0].name,
         album: track.album.name,
-        uri: track.uri
+        uri: track.uri,
+        preview_url: track.preview_url
       }));
     });
   },
